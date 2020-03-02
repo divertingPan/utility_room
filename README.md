@@ -5,7 +5,7 @@
 
 **下面是各个文件的简要说明**  
   
-* dataloader.py：用pytorch从csv文件中读取数据，例子的数据是对应图片的路径，顺便还带了一个图片预处理和增广，但是少了一步最终的加载
+* dataloader.py：用pytorch从csv文件中读取数据，例子的数据是对应图片的路径，顺便还带了一个图片预处理和增广，但是少了一步最终的加载，先放在下面
 ```python
 dataloader = DataLoader(dataset,
                         batch_size=opt.batch_size,
