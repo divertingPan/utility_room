@@ -6,6 +6,7 @@ import pandas as pd
 from pandas import Series
 import matplotlib.pyplot as plt
 
+
 def Hurst(ts, ftitle): 
     
     n_min, n_max = 0, int(np.log2(len(ts)))
@@ -71,6 +72,7 @@ def Hurst(ts, ftitle):
     plt.setp(ltext, fontsize=12,fontweight='bold') #设置图例字体的大小和粗细
     plt.savefig('output/'+ftitle+'.svg', format='svg')  #建议保存为svg格式，再用inkscape转为矢量图emf后插入word中
     plt.show()
+    
     
 def Draw(file_name, figure_title, length):
 
