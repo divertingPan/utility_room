@@ -144,8 +144,7 @@ if __name__ == "__main__":
                                                                                                error_d.item(),
                                                                                                real_out.data.mean(),
                                                                                                fake_out.data.mean(),
-                                                                                               optimize_g.param_groups[
-                                                                                                   0]['lr']))
+                                                                                               optimize_g.param_groups[0]['lr']))
             # 训练生成器
             netg.zero_grad()
             # noises.data.copy_(torch.randn(opt.batch_size, opt.nz, 1, 1))
