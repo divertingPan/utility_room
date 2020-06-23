@@ -5,7 +5,7 @@
 
 **下面是各个文件的简要说明**  
   
-* [Hurst_calculate.py](https://github.com/divertingPan/utility_room/blob/master/Hurst_calculate.py)：计算时间序列Hurst指数的核心代码。毕设用的，不知道后面什么时候会不会又用到。
+* [Hurst_calculate.py](https://github.com/divertingPan/utility_room/blob/master/Hurst_calculate.py)：计算时间序列Hurst指数的核心代码。毕设用的，不知道后面什么时候会不会又用到。包括一部分画图的代码。
   
 * [dataloader.py](https://github.com/divertingPan/utility_room/blob/master/dataloader.py)：用pytorch从csv文件中读取数据，例子的数据是对应图片的路径，顺便还带了一个图片预处理和增广，但是少了一步最终的加载，先放在下面
 ```python
