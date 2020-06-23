@@ -14,12 +14,12 @@ dataloader = DataLoader(dataset,
                         shuffle=True)
 ```
 
+* pick_resume.py：一个根据表格中的信息筛选文件的小工具。表格中是一些人名，从海量简历里面找出这些人的简历并复制出来。
+
 * plot_lr_rate.py：里面有几个动态学习率的方法，同时有一个画出学习率的方法。其中也可以通过下面方法获取到目前的学习率值
 ```python
 optimize_g.param_groups[0]['lr']
 ```
-
-* pick_resume.py：一个根据表格中的信息筛选文件的小工具。表格中是一些人名，从海量简历里面找出这些人的简历并复制出来。
 
 * sum_by_province.py：某天的一个临时工程，也许哪天会再用上。可以按照列的信息筛选符合条件的人。不过因为该项目过于简单，所以连正则也没用上。
 
