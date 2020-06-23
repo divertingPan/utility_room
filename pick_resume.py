@@ -17,8 +17,8 @@ df = pd.read_excel(menu_path, usecols=[0]) # 以第1列（人名）作为检索k
 for maindir, subdir, filename in os.walk(resume_path):
     for i, file in enumerate(filename):
         file_no_space = ''.join(file.split())
-        for key in df['姓名']:
+        for i, key in enumerate(df['姓名']):
             if key in file_no_space:
-                copyfile(os.path.join(maindir, file), os.path.join(destination_path, file))
+                copyfile(os.path.join(maindir, file), os.path.join(destination_path, str(i)+file))
                 print(file)
 
