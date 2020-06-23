@@ -5,23 +5,23 @@
 
 **下面是各个文件的简要说明**  
   
-* Hurst_calculate.py：计算时间序列Hurst指数的核心代码。毕设用的，不知道后面什么时候会不会又用到。
+* [Hurst_calculate.py](https://github.com/divertingPan/utility_room/blob/master/Hurst_calculate.py)：计算时间序列Hurst指数的核心代码。毕设用的，不知道后面什么时候会不会又用到。
   
-* dataloader.py：用pytorch从csv文件中读取数据，例子的数据是对应图片的路径，顺便还带了一个图片预处理和增广，但是少了一步最终的加载，先放在下面
+* [dataloader.py](https://github.com/divertingPan/utility_room/blob/master/dataloader.py)：用pytorch从csv文件中读取数据，例子的数据是对应图片的路径，顺便还带了一个图片预处理和增广，但是少了一步最终的加载，先放在下面
 ```python
 dataloader = DataLoader(dataset,
                         batch_size=opt.batch_size,
                         shuffle=True)
 ```
 
-* pick_resume.py：一个根据表格中的信息筛选文件的小工具。表格中是一些人名，从海量简历里面找出这些人的简历并复制出来。
+* [pick_resume.py](https://github.com/divertingPan/utility_room/blob/master/pick_resume.py)：一个根据表格中的信息筛选文件的小工具。表格中是一些人名，从海量简历里面找出这些人的简历并复制出来。
 
-* plot_lr_rate.py：里面有几个动态学习率的方法，同时有一个画出学习率的方法。其中也可以通过下面方法获取到目前的学习率值
+* [plot_lr_rate.py](https://github.com/divertingPan/utility_room/blob/master/plot_lr_rate.py)：里面有几个动态学习率的方法，同时有一个画出学习率的方法。其中也可以通过下面方法获取到目前的学习率值
 ```python
 optimize_g.param_groups[0]['lr']
 ```
 
-* sum_by_province.py：某天的一个临时工程，也许哪天会再用上。可以按照列的信息筛选符合条件的人。不过因为该项目过于简单，所以连正则也没用上。
+* [sum_by_province.py](https://github.com/divertingPan/utility_room/blob/master/sum_by_province.py)：某天的一个临时工程，也许哪天会再用上。可以按照列的信息筛选符合条件的人。不过因为该项目过于简单，所以连正则也没用上。
 
-* train_cat.py：本身是catGAN里面的一个文件，但是由于结构简单、逻辑清晰、要素充分，非常适合用作pytorch建立网络、训练网络用的整体流程模板。  
-内含：超参数的定义调用方法；CUDA加速一行指令；构建网络的Sequential和forwad；数据加载和预处理；设置动态学习率；训练；结果输出；模型保存。
+* [train_cat.py](https://github.com/divertingPan/utility_room/blob/master/train_cat.py)：本身是catGAN里面的一个文件，但是由于结构简单、逻辑清晰、要素充分，非常适合用作pytorch建立网络、训练网络用的整体流程模板。  
+内含：超参数的定义调用方法；CUDA加速一行指令；构建网络的Sequential和forwad；数据
