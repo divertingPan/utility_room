@@ -40,4 +40,3 @@ if __name__ == '__main__':
                     break
             if flag:
                 hash_list.append(img)
-
