@@ -21,6 +21,8 @@ dataloader = DataLoader(dataset,
 optimize_g.param_groups[0]['lr']
 ```
 
+* [remove_duplicate.py](https://github.com/divertingPan/utility_room/blob/master/remove_duplicate.py)：去除数据集中的重复图片和无法读取的图片
+
 * [sum_by_province.py](https://github.com/divertingPan/utility_room/blob/master/sum_by_province.py)：某天的一个临时工程，也许哪天会再用上。可以按照列的信息筛选符合条件的人。不过因为该项目过于简单，所以连正则也没用上。
 
 * [train_cat.py](https://github.com/divertingPan/utility_room/blob/master/train_cat.py)：本身是catGAN里面的一个文件，但是由于结构简单、逻辑清晰、要素充分，非常适合用作pytorch建立网络、训练网络用的整体流程模板。  
