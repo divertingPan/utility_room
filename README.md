@@ -14,6 +14,11 @@ dataloader = DataLoader(dataset,
                         shuffle=True)
 ```
 
+* [face_detect.py](https://github.com/divertingPan/utility_room/blob/master/face_detect.py)：从一系列视频帧图像中裁剪出人脸。图像应该是已经从视频导出的帧。该程序想要直接运行的话，图片存放的路径格式应该是dataset_path/video_001/00001.jpg、dataset_path/video_001/00002.jpg，另须一个模型文件`shape_predictor_68_face_landmarks.dat`
+
+* [get_labels.py](https://github.com/divertingPan/utility_room/blob/master/get_labels.py)：CK+数据集，每个数据都有一个txt记录这个数据的标签，为了整合label到一个csv里面，使用这个脚本整合，可以简单修改后做其他类似任务。
+
+
 * [pick_resume.py](https://github.com/divertingPan/utility_room/blob/master/pick_resume.py)：一个根据表格中的信息筛选文件的小工具。表格中是一些人名，从海量简历里面找出这些人的简历并复制出来。
 
 * [plot_lr_rate.py](https://github.com/divertingPan/utility_room/blob/master/plot_lr_rate.py)：里面有几个动态学习率的方法，同时有一个画出学习率的方法。其中也可以通过下面方法获取到目前的学习率值
