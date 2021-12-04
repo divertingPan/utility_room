@@ -16,7 +16,7 @@ dataloader = DataLoader(dataset,
                         shuffle=True)
 ```
 
-* [face_detect.py](https://github.com/divertingPan/utility_room/blob/master/face_detect.py)：从一系列视频帧图像中裁剪出人脸。图像应该是已经从视频导出的帧。该程序想要直接运行的话，图片存放的路径格式应该是dataset_path/video_001/00001.jpg、dataset_path/video_001/00002.jpg，另须一个模型文件`shape_predictor_68_face_landmarks.dat`，在landmark_extract里有。
+* [face_detect.py](https://github.com/divertingPan/utility_room/blob/master/face_detect.py)：从一系列视频帧图像中裁剪出人脸。图像应该是已经从视频导出的帧。该程序想要直接运行的话，图片存放的路径格式应该是dataset_path/video_001/00001.jpg、dataset_path/video_001/00002.jpg，另须一个模型文件`shape_predictor_68_face_landmarks.dat`，在[landmark_extract](https://github.com/divertingPan/utility_room/tree/master/landmark_extract)里有。
 
 * [get_labels.py](https://github.com/divertingPan/utility_room/blob/master/get_labels.py)：CK+数据集，每个数据都有一个txt记录这个数据的标签，为了整合label到一个csv里面，使用这个脚本整合，可以简单修改后做其他类似任务。
 
