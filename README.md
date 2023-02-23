@@ -5,7 +5,7 @@
 
 **下面是各个文件的简要说明**  
 
-* [landmark_extract](https://github.com/divertingPan/utility_room/tree/master/landmark_extract)：导出图片中的人脸关键点，里面附带了检测模型`shape_predictor_68_face_landmarks.dat`
+* [face_landmark_extract](https://github.com/divertingPan/utility_room/blob/master/face_landmark_extract.py)：导出图片中的人脸关键点，附带检测模型`shape_predictor_68_face_landmarks.dat`
   
 * [Hurst_calculate.py](https://github.com/divertingPan/utility_room/blob/master/Hurst_calculate.py)：计算时间序列Hurst指数的核心代码。毕设用的，不知道后面什么时候会不会又用到。包括一部分画图的代码。
   
